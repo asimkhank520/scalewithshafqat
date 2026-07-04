@@ -50,11 +50,11 @@ export default function Reviews() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16" id="reviews-top-row">
           
           <div className="lg:col-span-6 text-left" id="reviews-intro">
-            <h2 className="text-emerald-400 font-mono text-sm uppercase tracking-widest font-bold mb-3">Client Feedback</h2>
+            <h2 className="text-brand-yellow font-mono text-sm uppercase tracking-widest font-bold mb-3">Client Feedback</h2>
             <h3 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
               Highly Rated by Scaling E-Commerce & Lead Generation Brands
             </h3>
-            <div className="h-1.5 w-16 bg-emerald-500 mt-6 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+            <div className="h-1.5 w-16 bg-brand-yellow mt-6 rounded-full shadow-[0_0_10px_rgba(251,185,47,0.5)]"></div>
             <p className="text-gray-400 mt-6 text-base sm:text-lg">
               We focus on building lasting relationships with business owners in Attock and around the globe. Our client retention is built strictly on transparent ROAS and stellar communication.
             </p>
@@ -79,7 +79,7 @@ export default function Reviews() {
 
             <button
               onClick={() => setShowForm(!showForm)}
-              className="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-[#090d16] font-extrabold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-emerald-500/10 transition-all flex items-center justify-center gap-2 text-sm"
+              className="w-full sm:w-auto bg-brand-yellow hover:bg-brand-yellow-hover text-[#090d16] font-extrabold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-brand-yellow/10 transition-all flex items-center justify-center gap-2 text-sm"
               id="write-review-toggle-btn"
             >
               <Plus className="w-4 h-4" />
@@ -95,8 +95,8 @@ export default function Reviews() {
             <h4 className="text-white font-extrabold text-xl mb-6">Leave Your Verified Review</h4>
             
             {success ? (
-              <div className="bg-emerald-500/10 border border-emerald-500/20 p-6 rounded-xl text-center text-emerald-400 flex flex-col items-center gap-3">
-                <div className="p-3 bg-emerald-500 text-[#090d16] rounded-full">
+              <div className="bg-brand-yellow/10 border border-brand-yellow/20 p-6 rounded-xl text-center text-brand-yellow flex flex-col items-center gap-3">
+                <div className="p-3 bg-brand-yellow text-[#090d16] rounded-full">
                   <Check className="w-6 h-6 stroke-[3]" />
                 </div>
                 <h5 className="font-bold text-lg">Thank you!</h5>
@@ -113,7 +113,7 @@ export default function Reviews() {
                       value={author}
                       onChange={(e) => setAuthor(e.target.value)}
                       placeholder="e.g. Shafqat Saleem"
-                      className="w-full bg-gray-950 border border-gray-800 focus:border-emerald-500/50 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none transition-colors"
+                      className="w-full bg-gray-950 border border-gray-800 focus:border-brand-yellow/50 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none transition-colors"
                     />
                   </div>
                   <div>
@@ -123,7 +123,7 @@ export default function Reviews() {
                       value={role}
                       onChange={(e) => setRole(e.target.value)}
                       placeholder="e.g. Founder"
-                      className="w-full bg-gray-950 border border-gray-800 focus:border-emerald-500/50 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none transition-colors"
+                      className="w-full bg-gray-950 border border-gray-800 focus:border-brand-yellow/50 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none transition-colors"
                     />
                   </div>
                 </div>
@@ -136,7 +136,7 @@ export default function Reviews() {
                       value={company}
                       onChange={(e) => setCompany(e.target.value)}
                       placeholder="e.g. Digital Brands"
-                      className="w-full bg-gray-950 border border-gray-800 focus:border-emerald-500/50 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none transition-colors"
+                      className="w-full bg-gray-950 border border-gray-800 focus:border-brand-yellow/50 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none transition-colors"
                     />
                   </div>
                   <div>
@@ -144,7 +144,7 @@ export default function Reviews() {
                     <select
                       value={rating}
                       onChange={(e) => setRating(parseInt(e.target.value))}
-                      className="w-full bg-gray-950 border border-gray-800 focus:border-emerald-500/50 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none transition-colors"
+                      className="w-full bg-gray-950 border border-gray-800 focus:border-brand-yellow/50 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none transition-colors"
                     >
                       <option value="5">5 Stars ★★★★★</option>
                       <option value="4">4 Stars ★★★★</option>
@@ -161,13 +161,13 @@ export default function Reviews() {
                     value={text}
                     onChange={(e) => setText(e.target.value)}
                     placeholder="Describe your scaling experience with Shafqat Saleem Ads..."
-                    className="w-full bg-gray-950 border border-gray-800 focus:border-emerald-500/50 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none transition-colors resize-none"
+                    className="w-full bg-gray-950 border border-gray-800 focus:border-brand-yellow/50 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none transition-colors resize-none"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-emerald-500 hover:bg-emerald-600 text-[#090d16] font-bold py-3 rounded-lg text-sm transition-all"
+                  className="w-full bg-brand-yellow hover:bg-brand-yellow-hover text-[#090d16] font-bold py-3 rounded-lg text-sm transition-all"
                 >
                   Post Live Review
                 </button>
@@ -181,7 +181,7 @@ export default function Reviews() {
           {reviewsList.map((rev) => (
             <div
               key={rev.id}
-              className="bg-gray-900/40 border border-gray-800/80 p-6 sm:p-8 rounded-2xl flex flex-col justify-between hover:border-emerald-500/15 transition-all shadow-lg"
+              className="bg-gray-900/40 border border-gray-800/80 p-6 sm:p-8 rounded-2xl flex flex-col justify-between hover:border-brand-yellow/15 transition-all shadow-lg"
               id={`review-item-${rev.id}`}
             >
               <div>
@@ -221,7 +221,7 @@ export default function Reviews() {
               <div className="pt-6 border-t border-gray-800/40 mt-6 flex items-center justify-between text-[10px] sm:text-xs text-gray-500 font-mono">
                 <span>{rev.date}</span>
                 {rev.verified && (
-                  <span className="text-emerald-400 flex items-center gap-1 font-bold">
+                  <span className="text-brand-yellow flex items-center gap-1 font-bold">
                     <Check className="w-3.5 h-3.5 stroke-[2.5]" />
                     <span>Verified Client</span>
                   </span>

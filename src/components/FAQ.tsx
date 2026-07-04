@@ -15,11 +15,11 @@ export default function FAQ() {
         
         {/* Header Title */}
         <div className="text-center max-w-3xl mx-auto mb-16" id="faq-header">
-          <h2 className="text-emerald-400 font-mono text-sm uppercase tracking-widest font-bold mb-3">Common Inquiries</h2>
+          <h2 className="text-brand-yellow font-mono text-sm uppercase tracking-widest font-bold mb-3">Common Inquiries</h2>
           <p className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Frequently Asked Questions
           </p>
-          <div className="h-1.5 w-16 bg-emerald-500 mx-auto mt-6 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+          <div className="h-1.5 w-16 bg-brand-yellow mx-auto mt-6 rounded-full shadow-[0_0_10px_rgba(251,185,47,0.5)]"></div>
           <p className="text-gray-400 mt-6 text-base sm:text-lg">
             Everything you need to know about our Meta advertising processes, workflow, budgets, and reporting mechanisms.
           </p>
@@ -33,7 +33,7 @@ export default function FAQ() {
               <div
                 key={item.id}
                 className={`bg-gray-900/35 border rounded-2xl transition-all overflow-hidden ${
-                  isOpen ? 'border-emerald-500/20 bg-gray-900/60' : 'border-gray-800/80 hover:border-gray-700'
+                  isOpen ? 'border-brand-yellow/20 bg-gray-900/60' : 'border-gray-800/80 hover:border-gray-700'
                 }`}
                 id={`faq-item-box-${item.id}`}
               >
@@ -44,10 +44,10 @@ export default function FAQ() {
                   aria-expanded={isOpen}
                   id={`faq-btn-${item.id}`}
                 >
-                  <span className="text-white font-bold text-sm sm:text-base leading-snug hover:text-emerald-400 transition-colors">
+                  <span className="text-white font-bold text-sm sm:text-base leading-snug hover:text-brand-yellow transition-colors">
                     {item.question}
                   </span>
-                  <div className={`p-1.5 rounded-lg bg-gray-950 border border-gray-800 text-gray-400 shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180 text-emerald-400' : ''}`}>
+                  <div className={`p-1.5 rounded-lg bg-gray-950 border border-gray-800 text-gray-400 shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180 text-brand-yellow' : ''}`}>
                     <ChevronDown className="w-4 h-4" />
                   </div>
                 </button>

@@ -9,11 +9,11 @@ export default function CaseStudies() {
         
         {/* Header Text */}
         <div className="text-center max-w-3xl mx-auto mb-16" id="cases-header">
-          <h2 className="text-emerald-400 font-mono text-sm uppercase tracking-widest font-bold mb-3">Proof of Concept</h2>
+          <h2 className="text-brand-yellow font-mono text-sm uppercase tracking-widest font-bold mb-3">Proof of Concept</h2>
           <p className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Our Data-Driven Campaigns in Action
           </p>
-          <div className="h-1.5 w-16 bg-emerald-500 mx-auto mt-6 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+          <div className="h-1.5 w-16 bg-brand-yellow mx-auto mt-6 rounded-full shadow-[0_0_10px_rgba(251,185,47,0.5)]"></div>
           <p className="text-gray-400 mt-6 text-base sm:text-lg">
             Explore how we restructure acquisition funnels and refine creative execution to hit scaling benchmarks.
           </p>
@@ -35,7 +35,7 @@ export default function CaseStudies() {
                   referrerPolicy="no-referrer"
                   className="object-cover w-full h-full opacity-75 hover:scale-103 transition-transform duration-500"
                 />
-                <div className="absolute top-4 left-4 bg-emerald-500 text-[#090d16] font-mono text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-md">
+                <div className="absolute top-4 left-4 bg-brand-yellow text-[#090d16] font-mono text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-md">
                   {item.industry}
                 </div>
               </div>
@@ -58,11 +58,11 @@ export default function CaseStudies() {
                     </div>
                     <div>
                       <span className="text-gray-500 text-[9px] font-mono uppercase tracking-wider block">Attributed Rev.</span>
-                      <span className="text-emerald-400 text-sm sm:text-base font-extrabold mt-1 block">{item.revenue}</span>
+                      <span className="text-brand-yellow text-sm sm:text-base font-extrabold mt-1 block">{item.revenue}</span>
                     </div>
                     <div>
-                      <span className="text-emerald-400 font-mono text-[9px] font-black uppercase tracking-wider block">Campaign ROAS</span>
-                      <span className="text-emerald-400 text-sm sm:text-base font-black mt-1 block">{item.roas}</span>
+                      <span className="text-brand-yellow font-mono text-[9px] font-black uppercase tracking-wider block">Campaign ROAS</span>
+                      <span className="text-brand-yellow text-sm sm:text-base font-black mt-1 block">{item.roas}</span>
                     </div>
                   </div>
 
@@ -72,7 +72,7 @@ export default function CaseStudies() {
                     <ul className="space-y-2">
                       {item.deliverables.map((deliv, dIdx) => (
                         <li key={dIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-gray-400">
-                          <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-4 h-4 text-brand-yellow shrink-0 mt-0.5" />
                           <span className="text-gray-300">{deliv}</span>
                         </li>
                       ))}
@@ -85,7 +85,7 @@ export default function CaseStudies() {
                   <span>SCALE WITH SHAFQAT</span>
                   <a
                     href="#contact"
-                    className="text-emerald-400 hover:text-emerald-300 font-extrabold flex items-center gap-1 hover:underline text-xs"
+                    className="text-brand-yellow hover:text-amber-300 font-extrabold flex items-center gap-1 hover:underline text-xs"
                   >
                     <span>Get Similar Results</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />

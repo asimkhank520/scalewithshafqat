@@ -21,7 +21,7 @@ export default function Footer() {
           {/* Column 1: Brand pitch (5 cols) */}
           <div className="md:col-span-5 text-left space-y-5" id="footer-col-brand">
             <div className="flex items-center gap-2" id="footer-logo">
-              <div className="bg-gradient-to-tr from-emerald-500 to-teal-400 p-2 rounded-lg text-[#0b0f19] font-black">
+              <div className="bg-gradient-to-tr from-brand-yellow to-amber-400 p-2 rounded-lg text-[#0b0f19] font-black">
                 <Globe className="w-5 h-5" />
               </div>
               <span className="text-white font-extrabold text-xl tracking-tight">ScaleWithShafqat</span>
@@ -41,7 +41,7 @@ export default function Footer() {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2.5 bg-gray-950 border border-gray-800 hover:border-emerald-500/30 text-gray-400 hover:text-emerald-400 rounded-xl transition-all hover:shadow-[0_4px_12px_rgba(16,185,129,0.15)]"
+                    className="p-2.5 bg-gray-950 border border-gray-800 hover:border-brand-yellow/30 text-gray-400 hover:text-brand-yellow rounded-xl transition-all hover:shadow-[0_4px_12px_rgba(251,185,47,0.15)]"
                     aria-label={`Visit our ${item.label} page`}
                   >
                     <IconComponent className="w-5 h-5" />
@@ -53,7 +53,7 @@ export default function Footer() {
                 href={agencyInfo.pinterestUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 bg-gray-950 border border-gray-800 hover:border-emerald-500/30 text-gray-400 hover:text-emerald-400 rounded-xl transition-all"
+                className="p-2.5 bg-gray-950 border border-gray-800 hover:border-brand-yellow/30 text-gray-400 hover:text-brand-yellow rounded-xl transition-all"
                 aria-label="Visit our Pinterest"
               >
                 <span className="font-extrabold font-mono text-xs">PIN</span>
@@ -65,11 +65,11 @@ export default function Footer() {
           <div className="md:col-span-3 text-left space-y-4" id="footer-col-nav">
             <h4 className="text-white font-extrabold text-sm uppercase tracking-wider font-mono">Quick Navigation</h4>
             <ul className="space-y-2.5 text-sm text-gray-400">
-              <li><a href="#services" className="hover:text-emerald-400 transition-colors">Digital Ad Services</a></li>
-              <li><a href="#calculator" className="hover:text-emerald-400 transition-colors">E-commerce ROI Tool</a></li>
-              <li><a href="#case-studies" className="hover:text-emerald-400 transition-colors">Case Result Portfolio</a></li>
-              <li><a href="#reviews" className="hover:text-emerald-400 transition-colors font-medium">Verified Reviews (5.0 ★)</a></li>
-              <li><a href="#faq" className="hover:text-emerald-400 transition-colors">Frequently Asked FAQs</a></li>
+              <li><a href="#services" className="hover:text-brand-yellow transition-colors">Digital Ad Services</a></li>
+              <li><a href="#calculator" className="hover:text-brand-yellow transition-colors">E-commerce ROI Tool</a></li>
+              <li><a href="#case-studies" className="hover:text-brand-yellow transition-colors">Case Result Portfolio</a></li>
+              <li><a href="#reviews" className="hover:text-brand-yellow transition-colors font-medium">Verified Reviews (5.0 ★)</a></li>
+              <li><a href="#faq" className="hover:text-brand-yellow transition-colors">Frequently Asked FAQs</a></li>
             </ul>
           </div>
 
@@ -78,7 +78,7 @@ export default function Footer() {
             <h4 className="text-white font-extrabold text-sm uppercase tracking-wider font-mono">Local Footprint & Trust</h4>
             
             <div className="bg-gray-950 border border-gray-850 p-4 rounded-xl flex items-start gap-3">
-              <div className="p-2 bg-emerald-500/10 text-emerald-400 rounded-lg mt-0.5">
+              <div className="p-2 bg-brand-yellow/10 text-brand-yellow rounded-lg mt-0.5">
                 <MapPin className="w-4 h-4" />
               </div>
               <div className="text-xs text-gray-400 leading-relaxed">
@@ -87,8 +87,8 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex items-center gap-2 text-xs text-emerald-400 font-mono" id="footer-cert-badge">
-              <Award className="w-4 h-4 text-emerald-400" />
+            <div className="flex items-center gap-2 text-xs text-brand-yellow font-mono" id="footer-cert-badge">
+              <Award className="w-4 h-4 text-brand-yellow" />
               <span>Certified Meta Ads Specialist</span>
             </div>
           </div>
@@ -101,7 +101,7 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <span>Verified 5.0 Star Google Ad Agency</span>
             <span>•</span>
-            <a href="#contact" className="hover:text-emerald-400 transition-colors">Privacy Policy</a>
+            <a href="#contact" className="hover:text-brand-yellow transition-colors">Privacy Policy</a>
           </div>
         </div>
 

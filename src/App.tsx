@@ -12,7 +12,7 @@ import WhatsAppWidget from './components/WhatsAppWidget';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#0b0f19] text-gray-100 flex flex-col justify-between selection:bg-emerald-500 selection:text-[#090d16]" id="app-root">
+    <div className="min-h-screen bg-[#0b0f19] text-gray-100 flex flex-col justify-between selection:bg-brand-yellow selection:text-[#090d16]" id="app-root">
       
       {/* Translucent Navigation Header */}
       <Header />

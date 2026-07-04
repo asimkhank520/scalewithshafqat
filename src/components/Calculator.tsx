@@ -33,17 +33,17 @@ export default function ROI_Calculator() {
   return (
     <section id="calculator" className="py-20 md:py-28 bg-[#0b0f19] relative overflow-hidden">
       {/* Visual Ambient Circles */}
-      <div className="absolute top-1/2 left-0 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute top-1/2 left-0 w-80 h-80 bg-brand-yellow/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header content */}
         <div className="text-center max-w-3xl mx-auto mb-16" id="calc-header">
-          <h2 className="text-emerald-400 font-mono text-sm uppercase tracking-widest font-bold mb-3">ROI Simulator</h2>
+          <h2 className="text-brand-yellow font-mono text-sm uppercase tracking-widest font-bold mb-3">ROI Simulator</h2>
           <p className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             See Your E-Commerce Scaling Potential
           </p>
-          <div className="h-1.5 w-16 bg-emerald-500 mx-auto mt-6 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+          <div className="h-1.5 w-16 bg-brand-yellow mx-auto mt-6 rounded-full shadow-[0_0_10px_rgba(251,185,47,0.5)]"></div>
           <p className="text-gray-400 mt-6 text-base sm:text-lg">
             Adjust the sliders below to calculate your estimated revenue and net profitability based on target ROAS benchmarks.
           </p>
@@ -56,7 +56,7 @@ export default function ROI_Calculator() {
               onClick={() => setCurrency('USD')}
               className={`px-5 py-2 rounded-lg font-bold text-xs sm:text-sm transition-all ${
                 currency === 'USD'
-                  ? 'bg-emerald-500 text-[#090d16] shadow-md'
+                  ? 'bg-brand-yellow text-[#090d16] shadow-md'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -66,7 +66,7 @@ export default function ROI_Calculator() {
               onClick={() => setCurrency('PKR')}
               className={`px-5 py-2 rounded-lg font-bold text-xs sm:text-sm transition-all ${
                 currency === 'PKR'
-                  ? 'bg-emerald-500 text-[#090d16] shadow-md'
+                  ? 'bg-brand-yellow text-[#090d16] shadow-md'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -87,13 +87,13 @@ export default function ROI_Calculator() {
                 <label className="text-gray-300 font-bold text-sm sm:text-base flex items-center gap-2">
                   <span>Monthly Ad Budget</span>
                 </label>
-                <div className="bg-gray-950 border border-gray-800 px-3 py-1.5 rounded-lg flex items-center text-emerald-400 font-bold font-mono text-sm sm:text-base">
+                <div className="bg-gray-950 border border-gray-800 px-3 py-1.5 rounded-lg flex items-center text-brand-yellow font-bold font-mono text-sm sm:text-base">
                   <span>{currencySymbol}</span>
                   <input
                     type="number"
                     value={budget}
                     onChange={(e) => setBudget(Math.max(0, parseInt(e.target.value) || 0))}
-                    className="bg-transparent focus:outline-none w-20 text-right ml-1 font-bold font-mono text-emerald-400"
+                    className="bg-transparent focus:outline-none w-20 text-right ml-1 font-bold font-mono text-brand-yellow"
                   />
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function ROI_Calculator() {
                 step={currency === 'USD' ? 100 : 5000}
                 value={budget}
                 onChange={(e) => setBudget(parseInt(e.target.value))}
-                className="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-emerald-500 focus:outline-none"
+                className="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-brand-yellow focus:outline-none"
               />
               <div className="flex justify-between text-gray-500 text-[10px] font-mono uppercase">
                 <span>Min: {currencySymbol}{currency === 'USD' ? '200' : '25k'}</span>
@@ -118,13 +118,13 @@ export default function ROI_Calculator() {
                 <label className="text-gray-300 font-bold text-sm sm:text-base">
                   Average Product Price (AOV)
                 </label>
-                <div className="bg-gray-950 border border-gray-800 px-3 py-1.5 rounded-lg flex items-center text-emerald-400 font-bold font-mono text-sm sm:text-base">
+                <div className="bg-gray-950 border border-gray-800 px-3 py-1.5 rounded-lg flex items-center text-brand-yellow font-bold font-mono text-sm sm:text-base">
                   <span>{currencySymbol}</span>
                   <input
                     type="number"
                     value={productPrice}
                     onChange={(e) => setProductPrice(Math.max(1, parseInt(e.target.value) || 1))}
-                    className="bg-transparent focus:outline-none w-20 text-right ml-1 font-bold font-mono text-emerald-400"
+                    className="bg-transparent focus:outline-none w-20 text-right ml-1 font-bold font-mono text-brand-yellow"
                   />
                 </div>
               </div>
@@ -135,7 +135,7 @@ export default function ROI_Calculator() {
                 step={currency === 'USD' ? 5 : 500}
                 value={productPrice}
                 onChange={(e) => setProductPrice(parseInt(e.target.value))}
-                className="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-emerald-500 focus:outline-none"
+                className="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-brand-yellow focus:outline-none"
               />
               <div className="flex justify-between text-gray-500 text-[10px] font-mono uppercase">
                 <span>Min: {currencySymbol}{currency === 'USD' ? '5' : '500'}</span>
@@ -148,15 +148,15 @@ export default function ROI_Calculator() {
               <div className="flex justify-between items-center">
                 <label className="text-gray-300 font-bold text-sm sm:text-base flex items-center gap-1.5">
                   <span>Expected ROAS</span>
-                  <span className="text-xs font-normal text-emerald-400 font-mono">(Return on Ad Spend)</span>
+                  <span className="text-xs font-normal text-brand-yellow font-mono">(Return on Ad Spend)</span>
                 </label>
-                <div className="bg-gray-950 border border-gray-800 px-3 py-1.5 rounded-lg flex items-center text-emerald-400 font-bold font-mono text-sm sm:text-base">
+                <div className="bg-gray-950 border border-gray-800 px-3 py-1.5 rounded-lg flex items-center text-brand-yellow font-bold font-mono text-sm sm:text-base">
                   <input
                     type="number"
                     step="0.1"
                     value={roas}
                     onChange={(e) => setRoas(Math.max(1, parseFloat(e.target.value) || 1))}
-                    className="bg-transparent focus:outline-none w-12 text-right mr-1 font-bold font-mono text-emerald-400"
+                    className="bg-transparent focus:outline-none w-12 text-right mr-1 font-bold font-mono text-brand-yellow"
                   />
                   <span>x</span>
                 </div>
@@ -168,7 +168,7 @@ export default function ROI_Calculator() {
                 step="0.1"
                 value={roas}
                 onChange={(e) => setRoas(parseFloat(e.target.value))}
-                className="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-emerald-500 focus:outline-none"
+                className="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-brand-yellow focus:outline-none"
               />
               <div className="flex justify-between text-gray-500 text-[10px] font-mono uppercase">
                 <span>Standard: 2.0x</span>
@@ -179,7 +179,7 @@ export default function ROI_Calculator() {
 
             {/* Explanatory text */}
             <div className="bg-gray-950/40 p-4 border border-gray-800 rounded-xl text-gray-400 text-xs sm:text-sm flex gap-3">
-              <span className="text-emerald-400">💡</span>
+              <span className="text-brand-yellow">💡</span>
               <p>
                 <strong>ROAS Benchmark:</strong> Most e-commerce brands we scale experience an average ROAS of <strong>3.0x to 4.5x</strong> after our professional funnel optimization process.
               </p>
@@ -188,11 +188,11 @@ export default function ROI_Calculator() {
           </div>
 
           {/* Outputs Section - Right */}
-          <div className="lg:col-span-5 bg-gradient-to-tr from-emerald-950/45 via-gray-900 to-gray-900 border border-emerald-500/10 p-6 sm:p-8 rounded-2xl flex flex-col justify-between gap-6" id="calc-outputs-box">
+          <div className="lg:col-span-5 bg-gradient-to-tr from-amber-950/45 via-gray-900 to-gray-900 border border-brand-yellow/10 p-6 sm:p-8 rounded-2xl flex flex-col justify-between gap-6" id="calc-outputs-box">
             
             <div className="space-y-6">
               <h3 className="text-white font-extrabold text-lg flex items-center gap-2">
-                <Calculator className="w-5 h-5 text-emerald-400" />
+                <Calculator className="w-5 h-5 text-brand-yellow" />
                 <span>Scaling Outlook Projection</span>
               </h3>
 
@@ -202,7 +202,7 @@ export default function ROI_Calculator() {
                 <span className="text-white text-3xl font-black tracking-tight block mt-1">
                   {currencySymbol}{totalRevenue.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })}
                 </span>
-                <div className="absolute right-4 bottom-4 text-emerald-400/10 group-hover:text-emerald-400/20 transition-colors">
+                <div className="absolute right-4 bottom-4 text-brand-yellow/10 group-hover:text-brand-yellow/20 transition-colors">
                   <ArrowUpRight className="w-10 h-10" />
                 </div>
               </div>
@@ -213,7 +213,7 @@ export default function ROI_Calculator() {
                 {/* Net Profit */}
                 <div className="bg-gray-950/80 p-4 border border-gray-800/80 rounded-xl">
                   <span className="text-gray-400 text-[10px] sm:text-xs font-mono uppercase tracking-wider block">Est. Net Profit</span>
-                  <span className={`text-xl sm:text-2xl font-black mt-1 block tracking-tight ${netProfit >= 0 ? 'text-emerald-400' : 'text-red-400'}`}>
+                  <span className={`text-xl sm:text-2xl font-black mt-1 block tracking-tight ${netProfit >= 0 ? 'text-brand-yellow' : 'text-red-400'}`}>
                     {netProfit < 0 ? '-' : ''}{currencySymbol}{Math.abs(netProfit).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })}
                   </span>
                   <span className="text-gray-500 text-[9px] block mt-0.5">After ad spend & COGS</span>
@@ -233,7 +233,7 @@ export default function ROI_Calculator() {
               {/* Estimated ROI */}
               <div className="flex items-center justify-between px-2 pt-2 border-t border-gray-800/50">
                 <span className="text-gray-400 text-sm font-medium">Estimated Net Ad ROI</span>
-                <span className={`font-mono font-black text-sm sm:text-base ${roi >= 0 ? 'text-emerald-400' : 'text-red-400'}`}>
+                <span className={`font-mono font-black text-sm sm:text-base ${roi >= 0 ? 'text-brand-yellow' : 'text-red-400'}`}>
                   {roi.toFixed(0)}%
                 </span>
               </div>
@@ -242,7 +242,7 @@ export default function ROI_Calculator() {
             {/* Custom Marketing Button linked to Results */}
             <a
               href="#contact"
-              className="w-full bg-emerald-500 hover:bg-emerald-600 text-[#090d16] font-black py-4 px-6 rounded-xl text-center shadow-lg hover:shadow-emerald-500/20 transition-all flex items-center justify-center gap-2 group text-sm"
+              className="w-full bg-brand-yellow hover:bg-brand-yellow-hover text-[#090d16] font-black py-4 px-6 rounded-xl text-center shadow-lg hover:shadow-brand-yellow/20 transition-all flex items-center justify-center gap-2 group text-sm"
               id="calc-cta-btn"
             >
               <span>Strategize to Achieve This ROI</span>

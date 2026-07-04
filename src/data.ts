@@ -8,7 +8,7 @@ export const agencyInfo = {
   founder: "Shafqat Saleem",
   role: "Founder & Lead Paid Ads Strategist",
   phone: "0349 5092876",
-  email: "contact@scalewithshafqat.com",
+  email: "sshafqatkhan76@gmail.com",
   whatsappUrl: "https://wa.me/message/YICJ7T3QQEB7A1",
   whatsappText: "Hi Shafqat, I would like to book a free digital marketing audit for my business!",
   facebookUrl: "https://www.facebook.com/ScaleWithShafqat.co",

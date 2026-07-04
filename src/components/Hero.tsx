@@ -2,8 +2,8 @@ import React from 'react';
 import { Star, ShieldCheck, ArrowRight, Award, MessageSquare, TrendingUp } from 'lucide-react';
 import { agencyInfo } from '../data';
 
-// Custom dynamic image reference
-const heroImage = "/src/assets/images/hero_marketing_1783183835204.jpg";
+// Custom dynamic image reference matching user uploaded results
+const heroImage = "/src/assets/images/ad_campaign_results_1783185994762.jpg";
 
 export default function Hero() {
   return (
@@ -12,8 +12,8 @@ export default function Hero() {
       className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-b from-[#0b0f19] via-[#0d1425] to-[#0b0f19]"
     >
       {/* Background Decorative Elements */}
-      <div className="absolute top-1/4 left-1/10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-1/4 right-1/10 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute top-1/4 left-1/10 w-72 h-72 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-1/10 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -26,18 +26,18 @@ export default function Hero() {
               className="inline-flex items-center gap-2.5 bg-gray-800/60 border border-gray-700/50 px-4 py-2 rounded-full w-fit shadow-md"
               id="hero-trust-badge"
             >
-              <div className="flex items-center gap-0.5 text-amber-400">
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
+              <div className="flex items-center gap-0.5 text-brand-yellow">
+                <Star className="w-4 h-4 fill-brand-yellow" />
+                <Star className="w-4 h-4 fill-brand-yellow" />
+                <Star className="w-4 h-4 fill-brand-yellow" />
+                <Star className="w-4 h-4 fill-brand-yellow" />
+                <Star className="w-4 h-4 fill-brand-yellow" />
               </div>
               <span className="text-xs font-semibold text-gray-200">
                 5.0 Google Rating
               </span>
               <span className="h-3 w-px bg-gray-700"></span>
-              <span className="text-xs font-semibold text-emerald-400 uppercase tracking-wider font-mono">
+              <span className="text-xs font-semibold text-brand-yellow uppercase tracking-wider font-mono">
                 Advertising Agency
               </span>
             </div>
@@ -48,7 +48,7 @@ export default function Hero() {
               id="hero-headline"
             >
               Scale Your Revenue With{" "}
-              <span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand-yellow to-amber-300 bg-clip-text text-transparent">
                 High-ROI Meta Ads
               </span>
             </h1>
@@ -64,7 +64,7 @@ export default function Hero() {
             {/* Strategic Credentials */}
             <div className="grid grid-cols-2 gap-4 sm:gap-6 pt-2 pb-4" id="hero-stats">
               <div className="flex items-start gap-3">
-                <div className="p-2 bg-emerald-500/10 rounded-lg text-emerald-400 mt-1">
+                <div className="p-2 bg-brand-yellow/10 rounded-lg text-brand-yellow mt-1">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
@@ -73,7 +73,7 @@ export default function Hero() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="p-2 bg-emerald-500/10 rounded-lg text-emerald-400 mt-1">
+                <div className="p-2 bg-brand-yellow/10 rounded-lg text-brand-yellow mt-1">
                   <Award className="w-5 h-5" />
                 </div>
                 <div>
@@ -87,7 +87,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2" id="hero-actions">
               <a
                 href="#contact"
-                className="group flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-[#090d16] font-extrabold px-8 py-4 rounded-xl shadow-[0_10px_20px_rgba(16,185,129,0.3)] hover:shadow-[0_12px_24px_rgba(16,185,129,0.4)] transition-all transform hover:-translate-y-0.5"
+                className="group flex items-center justify-center gap-2 bg-brand-yellow hover:bg-brand-yellow-hover text-[#090d16] font-extrabold px-8 py-4 rounded-xl shadow-[0_10px_20px_rgba(251,185,47,0.3)] hover:shadow-[0_12px_24px_rgba(251,185,47,0.4)] transition-all transform hover:-translate-y-0.5"
                 id="hero-primary-cta"
               >
                 <span>Book A Free Strategy Call</span>
@@ -116,7 +116,7 @@ export default function Hero() {
           {/* Graphical/Illustrative Dashboard Display */}
           <div className="lg:col-span-5 relative w-full aspect-video lg:aspect-square flex items-center justify-center" id="hero-graphic-container">
             {/* Ambient Backglow */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/20 to-teal-500/10 rounded-3xl blur-2xl transform rotate-3 -z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-brand-yellow/20 to-amber-500/10 rounded-3xl blur-2xl transform rotate-3 -z-10"></div>
             
             {/* Main Visual Image Card */}
             <div className="bg-gray-900 border border-gray-800 p-2.5 rounded-3xl overflow-hidden shadow-2xl relative w-full h-full flex items-center justify-center group">
@@ -134,7 +134,7 @@ export default function Hero() {
                 id="hero-floating-stat-box"
               >
                 <div className="flex items-center gap-3">
-                  <div className="bg-emerald-500/10 text-emerald-400 p-2 rounded-xl">
+                  <div className="bg-brand-yellow/10 text-brand-yellow p-2 rounded-xl">
                     <TrendingUp className="w-5 h-5" />
                   </div>
                   <div>
@@ -143,7 +143,7 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="text-right">
-                  <span className="text-emerald-400 font-black text-xl tracking-tight block">5.0 ★</span>
+                  <span className="text-brand-yellow font-black text-xl tracking-tight block">5.0 ★</span>
                   <span className="text-gray-500 text-[10px] font-medium block">Verified Performance</span>
                 </div>
               </div>

@@ -100,11 +100,11 @@ export default function Contact() {
         
         {/* Intro */}
         <div className="text-center max-w-3xl mx-auto mb-16" id="contact-header">
-          <h2 className="text-emerald-400 font-mono text-sm uppercase tracking-widest font-bold mb-3">Launch Your Campaigns</h2>
+          <h2 className="text-brand-yellow font-mono text-sm uppercase tracking-widest font-bold mb-3">Launch Your Campaigns</h2>
           <p className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Claim Your Free Paid Ads Audit
           </p>
-          <div className="h-1.5 w-16 bg-emerald-500 mx-auto mt-6 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+          <div className="h-1.5 w-16 bg-brand-yellow mx-auto mt-6 rounded-full shadow-[0_0_10px_rgba(251,185,47,0.5)]"></div>
           <p className="text-gray-400 mt-6 text-base sm:text-lg">
             Let's evaluate your existing pixel data, custom audiences, and campaign funnels to spot your scaling blocks.
           </p>
@@ -121,12 +121,12 @@ export default function Contact() {
               
               {/* Phone item */}
               <div className="flex items-start gap-4" id="info-phone">
-                <div className="p-3 bg-emerald-500/10 text-emerald-400 rounded-xl mt-0.5">
+                <div className="p-3 bg-brand-yellow/10 text-brand-yellow rounded-xl mt-0.5">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
                   <span className="text-gray-500 text-[10px] font-mono uppercase tracking-wider block">Call Direct</span>
-                  <a href={`tel:${agencyInfo.phone.replace(/\s+/g, '')}`} className="text-white font-extrabold text-base hover:text-emerald-400 transition-colors block mt-1">
+                  <a href={`tel:${agencyInfo.phone.replace(/\s+/g, '')}`} className="text-white font-extrabold text-base hover:text-brand-yellow transition-colors block mt-1">
                     {agencyInfo.phone}
                   </a>
                 </div>
@@ -134,12 +134,12 @@ export default function Contact() {
 
               {/* Email item */}
               <div className="flex items-start gap-4" id="info-email">
-                <div className="p-3 bg-emerald-500/10 text-emerald-400 rounded-xl mt-0.5">
+                <div className="p-3 bg-brand-yellow/10 text-brand-yellow rounded-xl mt-0.5">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <span className="text-gray-500 text-[10px] font-mono uppercase tracking-wider block">Email Inquiries</span>
-                  <a href={`mailto:${agencyInfo.email}`} className="text-white font-extrabold text-base hover:text-emerald-400 transition-colors block mt-1 break-all">
+                  <a href={`mailto:${agencyInfo.email}`} className="text-white font-extrabold text-base hover:text-brand-yellow transition-colors block mt-1 break-all">
                     {agencyInfo.email}
                   </a>
                 </div>
@@ -147,7 +147,7 @@ export default function Contact() {
 
               {/* Location item */}
               <div className="flex items-start gap-4" id="info-location">
-                <div className="p-3 bg-emerald-500/10 text-emerald-400 rounded-xl mt-0.5">
+                <div className="p-3 bg-brand-yellow/10 text-brand-yellow rounded-xl mt-0.5">
                   <MapPin className="w-5 h-5 animate-pulse" />
                 </div>
                 <div>
@@ -161,13 +161,13 @@ export default function Contact() {
 
             {/* Custom Interactive Maps placeholder Card */}
             <div className="bg-gray-900 border border-gray-800 p-6 rounded-2xl shadow-xl overflow-hidden relative group" id="map-visual-card">
-              <div className="absolute top-4 right-4 z-10 bg-gray-950/80 backdrop-blur border border-gray-800 px-3 py-1 rounded-full text-[10px] text-emerald-400 font-mono font-bold flex items-center gap-1">
+              <div className="absolute top-4 right-4 z-10 bg-gray-950/80 backdrop-blur border border-gray-800 px-3 py-1 rounded-full text-[10px] text-brand-yellow font-mono font-bold flex items-center gap-1">
                 <span>Attock, PK</span>
               </div>
               
               {/* Styled Maps Background placeholder */}
               <div className="aspect-video w-full rounded-xl bg-gray-950/90 border border-gray-800 flex flex-col items-center justify-center p-4 text-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-radial-gradient from-emerald-500/5 to-transparent pointer-events-none"></div>
+                <div className="absolute inset-0 bg-radial-gradient from-brand-yellow/5 to-transparent pointer-events-none"></div>
                 {/* Visual grid overlay to simulate maps grid */}
                 <div className="absolute inset-0 grid grid-cols-6 grid-rows-4 opacity-5 pointer-events-none border border-gray-800">
                   {Array.from({ length: 24 }).map((_, i) => (
@@ -175,7 +175,7 @@ export default function Contact() {
                   ))}
                 </div>
                 
-                <MapPin className="w-10 h-10 text-emerald-400 mb-3 drop-shadow-[0_0_10px_rgba(16,185,129,0.5)] animate-bounce" />
+                <MapPin className="w-10 h-10 text-brand-yellow mb-3 drop-shadow-[0_0_10px_rgba(251,185,47,0.5)] animate-bounce" />
                 <h4 className="text-white font-bold text-sm">Shafqat Saleem Office Location</h4>
                 <p className="text-gray-500 text-xs mt-1.5 max-w-xs leading-normal">
                   AL AWAN TOWN MURAQBA HAL ATK, Attock District, Pakistan
@@ -185,7 +185,7 @@ export default function Contact() {
                   href={agencyInfo.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 bg-gray-900 hover:bg-emerald-500 hover:text-[#090d16] border border-gray-800 hover:border-emerald-500 text-gray-300 font-bold text-xs py-2 px-4 rounded-lg flex items-center gap-1.5 transition-all shadow-md"
+                  className="mt-4 bg-gray-900 hover:bg-brand-yellow hover:text-[#090d16] border border-gray-800 hover:border-brand-yellow text-gray-300 font-bold text-xs py-2 px-4 rounded-lg flex items-center gap-1.5 transition-all shadow-md"
                   id="google-maps-link"
                 >
                   <span>Open Google Maps</span>
@@ -203,7 +203,7 @@ export default function Contact() {
               {submitted ? (
                 /* Success screen */
                 <div className="text-center py-10 flex flex-col items-center justify-center gap-5" id="form-success-state">
-                  <div className="w-16 h-16 bg-emerald-500 text-[#090d16] rounded-full flex items-center justify-center shadow-lg shadow-emerald-500/10">
+                  <div className="w-16 h-16 bg-brand-yellow text-[#090d16] rounded-full flex items-center justify-center shadow-lg shadow-brand-yellow/10">
                     <CheckCircle2 className="w-10 h-10 stroke-[2.5]" />
                   </div>
                   <div>
@@ -217,7 +217,7 @@ export default function Contact() {
                   <div className="flex flex-col sm:flex-row gap-3 mt-4 w-full justify-center">
                     <button
                       onClick={handleSendToWhatsApp}
-                      className="bg-emerald-500 hover:bg-emerald-600 text-[#090d16] font-extrabold px-6 py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 text-sm transition-all transform hover:-translate-y-0.5"
+                      className="bg-brand-yellow hover:bg-brand-yellow-hover text-[#090d16] font-extrabold px-6 py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 text-sm transition-all transform hover:-translate-y-0.5"
                       id="whatsapp-forward-btn"
                     >
                       <Send className="w-4.5 h-4.5" />
@@ -236,7 +236,7 @@ export default function Contact() {
                 /* Interactive Form fields */
                 <form onSubmit={handleSubmit} className="space-y-6 text-left" id="audit-form">
                   <h3 className="text-white font-extrabold text-2xl tracking-tight">Request Strategic Consultation</h3>
-                  <div className="h-1.5 w-12 bg-emerald-500 rounded-full mb-6"></div>
+                  <div className="h-1.5 w-12 bg-brand-yellow rounded-full mb-6"></div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
@@ -247,7 +247,7 @@ export default function Contact() {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="e.g. Shafqat Saleem"
-                        className="w-full bg-gray-950 border border-gray-800 focus:border-emerald-500/50 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none transition-colors"
+                        className="w-full bg-gray-950 border border-gray-800 focus:border-brand-yellow/50 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none transition-colors"
                       />
                     </div>
                     <div>
@@ -258,7 +258,7 @@ export default function Contact() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="e.g. hello@business.com"
-                        className="w-full bg-gray-950 border border-gray-800 focus:border-emerald-500/50 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none transition-colors"
+                        className="w-full bg-gray-950 border border-gray-800 focus:border-brand-yellow/50 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
@@ -272,7 +272,7 @@ export default function Contact() {
                         value={whatsapp}
                         onChange={(e) => setWhatsapp(e.target.value)}
                         placeholder="e.g. 0349 5092876"
-                        className="w-full bg-gray-950 border border-gray-800 focus:border-emerald-500/50 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none transition-colors"
+                        className="w-full bg-gray-950 border border-gray-800 focus:border-brand-yellow/50 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none transition-colors"
                       />
                     </div>
                     <div>
@@ -282,7 +282,7 @@ export default function Contact() {
                         value={website}
                         onChange={(e) => setWebsite(e.target.value)}
                         placeholder="e.g. https://mybrand.com"
-                        className="w-full bg-gray-950 border border-gray-800 focus:border-emerald-500/50 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none transition-colors"
+                        className="w-full bg-gray-950 border border-gray-800 focus:border-brand-yellow/50 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
@@ -292,7 +292,7 @@ export default function Contact() {
                     <select
                       value={budget}
                       onChange={(e) => setBudget(e.target.value)}
-                      className="w-full bg-gray-950 border border-gray-800 focus:border-emerald-500/50 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none transition-colors cursor-pointer"
+                      className="w-full bg-gray-950 border border-gray-800 focus:border-brand-yellow/50 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none transition-colors cursor-pointer"
                     >
                       <option>Below $1,000 / PKR 250k</option>
                       <option>$1,000 - $3,000 / PKR 250k - 750k</option>
@@ -308,13 +308,13 @@ export default function Contact() {
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       placeholder="e.g., Pixel tracking is broken, high cost-per-purchase, or ready to scale a winning offer..."
-                      className="w-full bg-gray-950 border border-gray-800 focus:border-emerald-500/50 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none transition-colors resize-none"
+                      className="w-full bg-gray-950 border border-gray-800 focus:border-brand-yellow/50 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none transition-colors resize-none"
                     ></textarea>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-emerald-500 hover:bg-emerald-600 text-[#090d16] font-extrabold py-4 rounded-xl text-center shadow-lg shadow-emerald-500/10 hover:shadow-emerald-500/20 transition-all flex items-center justify-center gap-2 group text-sm cursor-pointer"
+                    className="w-full bg-brand-yellow hover:bg-brand-yellow-hover text-[#090d16] font-extrabold py-4 rounded-xl text-center shadow-lg shadow-brand-yellow/10 hover:shadow-brand-yellow/20 transition-all flex items-center justify-center gap-2 group text-sm cursor-pointer"
                     id="submit-form-btn"
                   >
                     <span>Request My Free Audit</span>
@@ -333,7 +333,7 @@ export default function Contact() {
           <div className="mt-16 bg-gray-900 border border-gray-800 p-6 sm:p-8 rounded-2xl text-left shadow-2xl" id="submission-history-panel">
             <div className="flex items-center justify-between mb-6 border-b border-gray-800 pb-4">
               <h4 className="text-white font-extrabold text-lg flex items-center gap-2">
-                <History className="w-5 h-5 text-emerald-400" />
+                <History className="w-5 h-5 text-brand-yellow" />
                 <span>My Audit Requests History (Saved on this browser)</span>
               </h4>
               <button
@@ -356,11 +356,11 @@ export default function Contact() {
                   <div className="space-y-2">
                     <div className="flex justify-between items-start gap-2">
                       <span className="text-white font-bold text-sm">{inq.name}</span>
-                      <span className="text-emerald-400 font-mono text-[9px] font-bold bg-emerald-500/10 px-2 py-0.5 rounded-full">{inq.budget}</span>
+                      <span className="text-brand-yellow font-mono text-[9px] font-bold bg-brand-yellow/10 px-2 py-0.5 rounded-full">{inq.budget}</span>
                     </div>
                     <p className="text-gray-400 text-xs font-medium break-all">{inq.email} • {inq.whatsapp}</p>
                     {inq.website !== 'Not specified' && (
-                      <p className="text-emerald-500 text-xs flex items-center gap-1 font-mono truncate">
+                      <p className="text-brand-yellow text-xs flex items-center gap-1 font-mono truncate">
                         <Globe className="w-3.5 h-3.5 shrink-0" />
                         <span className="truncate">{inq.website}</span>
                       </p>
@@ -385,7 +385,7 @@ export default function Contact() {
                           behavior: 'smooth'
                         });
                       }}
-                      className="text-emerald-400 hover:text-emerald-300 font-extrabold hover:underline"
+                      className="text-brand-yellow hover:text-amber-300 font-extrabold hover:underline"
                     >
                       Reload and Resend
                     </button>
