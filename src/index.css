@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-brand-green: #10b981;
+  --color-brand-green-hover: #059669;
+  --color-brand-dark: #090d16;
+  --color-brand-card: #111827;
+}
